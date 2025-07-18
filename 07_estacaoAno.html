@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: ESTAÇÃO DO ANO
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+   //hemisferio sul: Verão: Inicia-se por volta de 21 de dezembro e termina por volta de 20 de março. 
+//Outono: Inicia-se por volta de 20 de março e termina por volta de 21 de junho
+//Inverno: Inicia-se por volta de 21 de junho e termina por volta de 22 ou 23 de setembro
+//Primavera: Inicia-se por volta de 22 ou 23 de setembro e termina por volta de 21 de dezembro
+
+//Hemisferio norte: 
+//Primavera:Começa por volta do dia 20 de março e termina por volta do dia 21 de junho. 
+//Verão:Começa por volta do dia 21 de junho e termina por volta do dia 23 de setembro. 
+//Outono:Começa por volta do dia 23 de setembro e termina por volta do dia 22 de dezembro. 
+//Inverno:Começa por volta do dia 22 de dezembro e termina por volta do dia 20 de março. 
+
+
+    //ENTRADA
+const hemisferio = prompt("informe o hemisferio que voce está");
+const mes = Number(prompt("informe o mes que voce está"));
+    
+    //PROCESSAMENTO
+switch (hemisferio) {
+    case sul:
+        switch(mes){
+            case dezembro, janeiro, fevereiro, março:
+                alert("verão");
+                break;
+                case março, abril, junho:
+                    alert("outono");
+                    break;
+                    case Junho, julho, agosto, setembro: 
+                    alert("inverno");
+                    break;
+                    case setembro, outubro, novembro:
+                        alert("primavera");
+                        break;
+                        default: 
+                        alert("seu mes informado não é valido!");
+                        break;
+        }
+        
+        break;
+
+        switch(hemisferio){
+            case norte:
+                switch(mes){
+                    case março, abril, maio, junho:
+                        alert("primavera");
+                        break;
+                        case julho, agosto, setembro:
+                            alert("verão");
+                            break;
+                            case outubro, novembro, dezembro:
+                                alert("outono");
+                                break;
+                                case dezembro, janeiro, fevereiro:
+                                    alert("inverno");
+                                    break;
+                                    default:
+                                        alert("mes inválido!");
+                                        break;
+                }
+        }
+
+    default:
+        break;
+}
+
+    //SAÍDA
+
+</script>
